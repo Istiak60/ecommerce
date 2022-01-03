@@ -1,66 +1,31 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php
+include_once('../views/elements/head.php');
 
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+?>
 
-    <link href="css/style.css" rel="stylesheet">
-
-    <title>Ecommerce</title>
-</head>
 <body>
-
+<?php
+include_once('../views/elements/header.php');
+include_once('../views/elements/navbar.php');
+?>
 <!--Markup for Header-->
-<header>
-    <div id="top-header">
 
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span><i class="fas fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="myNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="product.html">LIVING ROOM</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">DINING & BAR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BEDROOM</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">KITCHEN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">HOME IMPROVEMENT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CUSTOM</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-</header>
-
+<style>
+   .col-md-7 .rating_review {
+    border-bottom: 1px #e5e5e5 solid;
+    }
+    .col-md-7 .price {
+    border-bottom: 1px #e5e5e5 solid;
+    }
+</style>
 <!--Markup for breadcrumb-->
 <section id="breadcrumb" class="mt-3">
     <div class="container">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Grandpa Rocking Chair</li>
             </ol>
         </nav>
@@ -74,15 +39,14 @@
                     <!-- default start -->
                 <section id="default" class="padding-top0">
                     <div class="xzoom-container">
-                        <img class="xzoom" id="xzoom-default" src="img/product3-400x400.jpg" xoriginal="img/product3-700x850.jpg" />
+                        <img class="xzoom" id="xzoom-default" src="img/product1_400X400.jpg" xoriginal="img/product1_700X850.jpg" />
+
                         <div class="xzoom-thumbs">
-                            <a href="img/product3-700x850.jpg"><img class="xzoom-gallery" width="80" src="img/product3-700x850.jpg"  xpreview="img/product3-400x400.jpg" title="The description goes here"></a>
+                            <a href="img/product1_700x850.jpg"><img class="xzoom-gallery" width="80" src="img/product1_700x850.jpg"  xpreview="img/product1_400x400.jpg" title="The description goes here"></a>
+                            <a href="img/product2_700x850.jpg"><img class="xzoom-gallery" width="80" src="img/product2_700x850.jpg"  xpreview="img/product2_400x400.jpg" title="The description goes here"></a>
+                            <a href="img/product12-700x850.jpg"><img class="xzoom-gallery" width="80" src="img/product12-700x850.jpg"  xpreview="img/product12-400x400.jpg" title="The description goes here"></a>
+                            <a href="img/product6-700x850.jpg"><img class="xzoom-gallery" width="80" src="img/product6-700x850.jpg"  xpreview="img/product6-400x400.jpg" title="The description goes here"></a>
 
-                            <a href="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/original/02_o_car.jpg"><img class="xzoom-gallery" width="80" src="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/preview/02_o_car.jpg" title="The description goes here"></a>
-
-                            <a href="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/original/03_r_car.jpg"><img class="xzoom-gallery" width="80" src="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/preview/03_r_car.jpg" title="The description goes here"></a>
-
-                            <a href="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/original/04_g_car.jpg"><img class="xzoom-gallery" width="80" src="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/preview/04_g_car.jpg" title="The description goes here"></a>
                         </div>
                     </div>
                 </section>
@@ -90,26 +54,32 @@
             </div>
 
             <div class="col-md-7">
-                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet provident quis velit voluptate? A
-                    asperiores autem fuga fugiat, laborum molestias nesciunt non obcaecati odit quod soluta temporibus
-                    ut vel voluptatibus?
-                </div>
-                <div>Ad aliquam aliquid cupiditate deserunt dignissimos dolores eaque error facere hic illo in nihil non
-                    nostrum nulla placeat quae repellat sed ullam, unde velit, vero voluptatem, voluptates! Accusantium
-                    inventore, quidem.
-                </div>
-                <div>Ab eveniet id perferendis provident repellat. Accusantium consectetur cumque doloribus esse eum
-                    expedita magnam officia quam quis sint. Accusamus aspernatur, assumenda consequatur illum ipsum quam
-                    reiciendis sit tempora temporibus vero?
-                </div>
-                <div>Asperiores, consequuntur debitis ducimus maiores modi nesciunt possimus quaerat quam! Ab aliquam
-                    amet dignissimos dolores enim facere fuga laborum laudantium modi non omnis, placeat quam quidem
-                    repudiandae soluta sunt voluptatum.
-                </div>
-                <div>Accusantium aliquam cupiditate dolore doloremque doloribus ea eius eos, et fuga fugiat harum hic id
-                    ipsa iure neque odio perferendis praesentium quisquam quos repellat repudiandae vel veniam voluptas!
-                    Cum, reprehenderit!
-                </div>
+                <div class="card">
+                    <h3 class="fs-1">GRANDPA ROCKING CHAIR</h3>
+                    <div class="rating_review">
+                        <p class="card-text"><i class="fas fa-star  fa-xs"></i> <i class="fas fa-star fa-xs"></i> <i class="fas fa-star fa-xs"></i> <i class="fas fa-star fa-xs"></i> <i class="fas fa-star fa-xs"></i></p>
+                        <p>0 Reviews | Write a review</p>
+                    </div>
+                    <div class="price">
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                            <p class="fs-2">&dollar;100.00</p>
+                            </div>
+                            <div class="col-md-6 ">
+                            <button type="button" class="btn btn-success">In Stock</button>
+                            </div>
+                        </div>
+                    
+
+
+                    </div>
+                    <div class="details">
+                        <p>Brand : Apple</p>
+                        <p>Product Code : Product 2022</p>
+                        <p>Rewarrd Points : 60</p>
+                    </div>
+                    
+            
             </div>
         </div>
     </div>

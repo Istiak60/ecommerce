@@ -1,6 +1,4 @@
 <?php?>
-
-
 <!--Markup for BEST SELLERS-->
 <section id="best-sellers" class="mt-2">
     <div class="container">
@@ -17,7 +15,7 @@
                 <div class="card">
                     <a href="product-detail.php"><img src="img/product12-700x850.jpg" class="card-img-top" alt="BEST SELLERS Image" title="Grandpa Rocking Chair"></a>
                     <div class="card-body">
-                        <h5 class="card-title" title="Grandpa Rocking Chair"> <a href="#">Grandpa Rocking Chair</a></h5>
+                        <h5 class="card-title" title="Grandpa Rocking Chair"> <a href="product-detail.php">Grandpa Rocking Chair</a></h5>
                         <p class="card-text"><i class="fas fa-star  fa-xs"></i> <i class="fas fa-star fa-xs"></i> <i class="fas fa-star fa-xs"></i> <i class="fas fa-star fa-xs"></i> <i class="fas fa-star fa-xs"></i></p>
                         <p>&dollar;100</p>
                         <p><button type="button" class="btn btn-danger">Add to cart</button></p>
