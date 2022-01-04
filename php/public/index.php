@@ -14,6 +14,9 @@ include_once('../views/elements/best-sellers.php');
 include_once('../views/elements/special-products.php');
 include_once('../views/elements/special-products.php');
 include_once('../views/elements/script.php');
+include_once('../views/elements/footer.php');
+
+
 
 ?>
 
